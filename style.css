@@ -19,7 +19,7 @@ html, body{
 }
 
 #nav{
-    background-color: rgba(0, 0, 0, 0.3);
+    /* background-color: rgba(0, 0, 0, 0); */
     display: flex;
     width: 100%;
     height: 90px;
@@ -79,13 +79,99 @@ html, body{
     display: flex;
 }
 
-#left{
+#left, #right{
     height: 100vh;
     width: 50%;
     /* background-color: red; */
+    z-index: 10;
 }
-#right{
-    height: 100vh;
-    width: 50%;
-    /* background-color: blue; */
+#left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    line-height: 50px;
+    padding: 0 70px;
+}
+
+#left h2{
+    font-size: 40px;
+    position: relative;
+}
+#left h1{
+    font-size: 80px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+#left h2::before{
+    content: "FrontEnd";
+    position: absolute;
+    color: #000;
+    top: -2px;
+    left: -2px;
+    -webkit-text-stroke: 2px #50C9CD;
+    z-index: -1;
+}
+#left h1::before{
+    content: "Developer";
+    position: absolute;
+    color: #000;
+    top: -2px;
+    left: -2px;
+    -webkit-text-stroke: 2px #50C9CD;
+    z-index: -1;
+}
+
+#left p{
+    line-height: 25px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+#left button{
+    background: none;
+    border: 2px solid #0ff;
+    font-size: 15px;
+    font-weight: 900;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    min-width: 150px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: color 0.4s linear;
+    position: relative;
+}
+
+#left button:hover{
+    color: #000;
+}
+
+#left button::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #50C9CD;
+    z-index: -1;
+    transition: transform 0.5s;
+    transform-origin: 0 0;
+    transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
+    transform: scaleX(0);
+}
+#left button:hover::before{
+    transform: scaleX(1);
+}
+
+#right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#right img {
+    height: 450px;
+    scale: 1;
 }
