@@ -179,4 +179,24 @@ html, body{
 #page2{
     height: 100vh;
     width: 100%;
+    /* background-color: red; */
+    padding: 90px 0;
+}
+
+#page2 h1{
+    font-size: 40px;
+    font-weight: 900;
+    text-decoration: underline;
+    margin-left: 70px;
+    position: relative;
+}
+
+#page2 h1::before{
+    content: "Projects";
+    position: absolute;
+    left: -2px;
+    top: -2x;
+    /* color: transparent; */
+    -webkit-text-stroke: 2px #50C9CD;
+    z-index: -1;
 }
