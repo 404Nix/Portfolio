@@ -180,7 +180,9 @@ html, body{
     height: 100vh;
     width: 100%;
     /* background-color: red; */
-    padding: 90px 0;
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
 }
 
 #page2 h1{
@@ -188,6 +190,7 @@ html, body{
     font-weight: 900;
     text-decoration: underline;
     margin-left: 70px;
+    margin-bottom: 60px;
     position: relative;
 }
 
@@ -199,4 +202,22 @@ html, body{
     /* color: transparent; */
     -webkit-text-stroke: 2px #50C9CD;
     z-index: -1;
+}
+
+#container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#pr-box{
+    height: 50%;
+    width: 30%;
+    margin-left: 50px;
+    margin-bottom: 50px;
+    /* background-color: blue; */
+    border: 2px solid black;
+    border-radius: 20px;
 }
