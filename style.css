@@ -77,6 +77,7 @@ html, body{
     width: 100%;
     position: relative;
     display: flex;
+    z-index: 10;
 }
 
 #left, #right{
@@ -177,24 +178,24 @@ html, body{
 }
 
 #page2{
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     /* background-color: red; */
     padding: 50px 0;
-    display: flex;
-    flex-direction: column;
+    z-index: 10;
 }
 
-#page2 h1{
+#pg2-heading{
     font-size: 40px;
     font-weight: 900;
     text-decoration: underline;
     margin-left: 70px;
     margin-bottom: 60px;
     position: relative;
+    z-index: 10;
 }
 
-#page2 h1::before{
+#pg2-heading::before{
     content: "Projects";
     position: absolute;
     left: -2px;
@@ -207,17 +208,81 @@ html, body{
 #container{
     height: 100vh;
     width: 100%;
+    position: relative;
+    z-index: 10;
+}
+
+#container-in{
+    height: 400px;
+    width: 100%;
+    /* background-color: red;
+    border: 2px solid black; */
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#container-in div{
+    height: 300px;
+    width: 400px;
+    /* background-color: blue; */
+}
+
+#container-in h1{
+    font-size: 50px;
+    font-weight: 900;
+    margin-bottom: 30px;
 }
 
 #pr-box{
     height: 50%;
     width: 30%;
-    margin-left: 50px;
-    margin-bottom: 50px;
-    /* background-color: blue; */
-    border: 2px solid black;
+    display: flex;
+    position: relative;
     border-radius: 20px;
+    border: 1px solid #000;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all ease 0.5s;
 }
+
+#pr-box img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: all ease 0.5s;
+}
+
+#overlay{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    opacity: 0;
+    transition: all ease 0.5s;
+}
+
+#overlay h3{
+    font-size: 15px;
+    font-weight: 800;
+    text-shadow: 2px 2px 10px #000;
+}
+#pr-box:hover img{
+    scale: 1.1;
+    filter: blur(3px);
+}
+
+#pr-box:hover{
+    box-shadow: 0 0 20px #00000054;
+}
+
+#overlay:hover{
+    opacity: 1;
+}
+/* 
+#page3{
+    height: 100vh;
+    width: 100%;
+    background-color: red;
+} */
