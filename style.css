@@ -18,6 +18,10 @@ html, body{
     background-color: #0ff;
 }
 
+a{
+    text-decoration: none;
+}
+
 #nav{
     /* background-color: rgba(0, 0, 0, 0); */
     display: flex;
@@ -51,10 +55,12 @@ html, body{
 #cursor{
     height: 10px;
     width: 10px;
-    background-color: #50C9CD;
-    box-shadow: 0 0 5px 0 #0ff;
+    /* background-color: #50C9CD; */
+    border: 1px solid #50C9CD;
+    /* box-shadow: 0 0 5px 0 #0ff; */
     position: fixed;
     border-radius: 50%;
+    pointer-events: none;
     z-index: 99;
 }
 
@@ -206,7 +212,7 @@ html, body{
 }
 
 #container{
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     position: relative;
     z-index: 10;
@@ -280,9 +286,9 @@ html, body{
 #overlay:hover{
     opacity: 1;
 }
-/* 
+
 #page3{
     height: 100vh;
     width: 100%;
     background-color: red;
-} */
+}
