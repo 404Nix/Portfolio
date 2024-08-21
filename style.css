@@ -47,9 +47,26 @@ a{
 }
 
 #nav-in h4{
+    position: relative;
     font-size: 18px;
     font-weight: 600;
+    cursor: pointer;
     text-transform: uppercase;
+}
+
+#nav-in h4::after{
+    content: '';
+    height: 3px;
+    width: 20%;
+    background-color: #50C9CD;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    transition: 0.25s all ease
+}
+
+#nav-in h4:hover::after{
+    width: 100%;
 }
 
 #cursor{
@@ -264,15 +281,21 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 20px;
     z-index: 10;
     opacity: 0;
     transition: all ease 0.5s;
 }
 
-#overlay h3{
+#overlay button{
+    color: #101B35;
     font-size: 15px;
     font-weight: 800;
-    text-shadow: 2px 2px 10px #000;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+    transition: 0.25s all ease;
 }
 #pr-box:hover img{
     scale: 1.1;
@@ -285,6 +308,10 @@ a{
 
 #overlay:hover{
     opacity: 1;
+}
+
+#overlay button:hover{
+    background-color: #0ff;
 }
 
 #page3{

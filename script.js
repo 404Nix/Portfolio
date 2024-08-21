@@ -10,8 +10,14 @@ document.addEventListener("mousemove", function(dets){
     }, {duration: 200, fill : "forwards"});
 
 
-    crsrBlur.style.left = dets.x - 250 +"px";
-    crsrBlur.style.top = dets.y - 250 +"px";
+
+    crsrBlur.animate({
+        left : `${dets.x-250}px`,
+        top : `${dets.y-250}px`
+    }, {duration: 300, fill : "forwards"});
+
+    // crsrBlur.style.left = dets.x - 250 +"px";
+    // crsrBlur.style.top = dets.y - 250 +"px";
 
 })
 
