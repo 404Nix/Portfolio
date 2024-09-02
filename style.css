@@ -375,6 +375,16 @@ section li:hover{
     margin-top: 200px;
 }
 
+.about-in{
+    height: 80%;
+    width: 100%;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 
 #page5{
     height: 100vh;
@@ -398,3 +408,5 @@ section li:hover{
     top: 50%;
     left: 50%;
 }
+
+
