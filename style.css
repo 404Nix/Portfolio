@@ -214,7 +214,7 @@ a{
     /* text-decoration: underline; */
     text-transform: uppercase;
     margin-left: 70px;
-    margin-bottom: 60px;
+    margin-bottom: 10px;
     position: relative;
     text-align: center;
     z-index: 9;
@@ -320,7 +320,7 @@ a{
 #page3{
     min-height: 100vh;
     width: 100%;
-    margin-top: 200px;
+    margin-top: 30px;
     /* background-color: red; */
     padding: 50px 90px;
     z-index: 10;
@@ -370,18 +370,37 @@ section li:hover{
 #page4{
     height: 100vh;
     width: 100%;
-    background-color:  blue;
+    /* background-color:  blue; */
     z-index: 10;
-    margin-top: 200px;
+    margin-top: 30px;
 }
 
 .about-in{
     height: 80%;
     width: 100%;
-    background-color: #000;
+    /* background-color: #000; */
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    z-index: 10;
+}
+
+.about-in img{
+    height: 400px;
+}
+
+.about-in div{
+    width: 45rem;
+}
+
+.about-in h1{
+    font-size: 60px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.about-in p{
+    line-height: 1.5rem;
 }
 
 
