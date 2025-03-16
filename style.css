@@ -93,6 +93,8 @@ a{
 
 #main{
     position: relative;
+    height: 100%;
+    width: 100%;
 }
 
 #page1{
@@ -406,13 +408,38 @@ section li:hover{
 
 
 #page5{
-    min-height: 50vh;
+    min-height: 30vh;
     position: relative;
     width: 100%;
-    background-color: green;
+    /* background-color: green; */
     
     z-index: 10;
 }
+
+
+.socials{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 20px;
+}
+
+.main-contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.main-contact a {
+    display: flex;
+    gap: 10px;
+}
+
+
 
 .footer{
     width: 100%;
